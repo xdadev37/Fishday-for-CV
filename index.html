@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سایت برای خرید ماهی های دریایی درجه 1#">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="nsite.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <link rel="icon" href="favico.jpg">
+    <title>پوریا صدیقی ارفعی : FishDay</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="130">
+    <script src="nsite.js"></script>
+    <!-- top -->
+    <!-- top -->
+    <div class="top nav p-2 bg-light position-relative">
+        <button class="btn btn-outline-danger btn-lg shadow" data-toggle="modal" data-target="#accform" id="acc"><i
+                class="fas userico fa-lg">&nbsp;&nbsp;</i>حساب
+            کاربری</button>
+        <button class="btn btn-outline-success btn-lg shadow" id="kif"><i class="fab shopico fa-lg">&nbsp;&nbsp;</i>کیف
+            پول</button>
+        <button class="btn btn-lg" data-toggle="modal" data-target="#mailform" id="mail"><kbd><i
+                    class="far mailico fa-lg">&nbsp;&nbsp;</i>info @
+                fishday.ir</kbd></button>
+        <!-- Account User Form -->
+        <!-- Account User Form -->
+        <div class="modal fade" id="accform">
+            <div class="modal-dialog">
+                <div class="modal-content p-4">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title ml-auto">ورود</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="uname">نام کاربری:</label>
+                                <input type="text" class="form-control" id="uname" placeholder="09XXXXXXXXXX" required>
+                                <div class="valid-feedback">صحیح</div>
+                                <div class="invalid-feedback">&#10060; پر کردن این فیلد الزامیست!</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">گذرواژه:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="*********" required>
+                                <div class="valid-feedback">صحیح</div>
+                                <div class="invalid-feedback">&#10060; پر کردن این فیلد الزامیست!</div>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="tik" required>
+                                <label for="tik">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;می
+                                    پذیرم</label>
+                                <div class="valid-feedback">پذیرفتید!</div>
+                                <div class="invalid-feedback">&#10060; نپذیرفتید!</div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">ارسال</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Send E-Mail -->
+        <!-- Send E-Mail -->
+        <div class="modal fade" id="mailform">
+            <div class="modal-dialog">
+                <div class="modal-content p-4">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title ml-auto">ایمیل</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="mailing">ایمیل خود را وارد کنید:</label>
+                                <input type="email" class="form-control" id="mailing" placeholder="XYZ@Xmail.com"
+                                    required>
+                                <div class="valid-feedback">صحیح</div>
+                                <div class="invalid-feedback">&#10060; پر کردن این فیلد الزامیست !</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pm">&#9998; پیام :</label>
+                                <textarea class="form-control" rows="7" id="pm"
+                                    placeholder="پیام خود را وارد کنید . . ." required></textarea>
+                                <div class="invalid-feedback">&#10060; پیامی وارد نشده !</div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">ارسال</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NavBar Bottstrap -->
+    <!-- NavBar Bottstrap -->
+    <div id="navpak" class="navbar navbar-expand bg-warning p-2">
+        <button id="hambutton" class="btn btn-primary">| | |</button>
+        <ul class="navbar-nav">
+            <li class="navbar-brand"><a href="http://fishday.ir"><em>FishDay</em></a></li>
+            <li class="nav-item nav-link"><a href="http://fishday.ir"><em
+                        class="fa homeico">&nbsp;&nbsp;&nbsp;</em>خانه</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">فهرست </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#gallery">اصل</a>
+                    <a class="dropdown-item" href="#fare">فرع</a>
+                </div>
+            </li>
+            <li class="nav-item nav-link"><a href="#products">محصولات</a></li>
+            <li class="nav-item nav-link"><a href="#usinfo">درباره ما</a></li>
+        </ul>
+    </div>
+    <!-- Image Slider -->
+    <!-- Image Slider -->
+    <div id="float">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <ul class="carousel-indicators pl-4">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                    <li data-target="#carousel" data-slide-to="4"></li>
+                </ul>
+                <div class="active">
+                    <img src="midimg.png" alt="">
+                    <section>
+                        <h3>مسافرت</h3>
+                        <p>به مسافرت بروید!</p>
+                    </section>
+                </div>
+                <div>
+                    <img src="fernando-puente-eu2EP0CGWz4-unsplash.jpg" alt="">
+                    <section>
+                        <h3>ماهی</h3>
+                        <p>ماهی قزل آلا</p>
+                    </section>
+                </div>
+                <div>
+                    <img src="fish1.jpg" alt="">
+                    <section>
+                        <h3>کوه</h3>
+                        <p>رشته کوه های آلپ!</p>
+                    </section>
+                </div>
+                <div>
+                    <img src="fish2.jpg" alt="">
+                    <section>
+                        <h3>دشت</h3>
+                        <p>دشت و کوه</p>
+                    </section>
+                </div>
+                <div>
+                    <img src="tim-oun-9vEd-okmjfI-unsplash.jpg" alt="">
+                    <section>
+                        <h3>کوه ودشت</h3>
+                        <p>دشت در کوه</p>
+                    </section>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon p-4"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" data-slide="next">
+                    <span class="carousel-control-next-icon p-4"></span>
+                </a>
+            </div>
+            <a class="up position-fixed text-warning fas flashicoup fa-lg" href="#"></a>
+        </div>
+        <hr>
+        <!-- Product Gallery -->
+        <!-- Product Gallery -->
+        <div id="gallery" class="pt-5">
+            <h3>ماهی های دریای</h3>
+            <div id="card" class="float-left">
+                <div class="card mt-4">
+                    <img src="fish1.jpg" class="card-img-top" alt="">
+                    <div class="card-header">شمال</div>
+                    <div class="card-body">شمال به چالوس</div>
+                    <div class="card-footer"><button class="btn btn-outline-danger px-4 py-2">خرید</button></div>
+                </div>
+                <div class="card mt-4">
+                    <img class="card-img-top" src="fish2.jpg" alt="">
+                    <div class="card-header">شمال</div>
+                    <div class="card-body">شمال به چالوس</div>
+                    <div class="card-footer"><button class="btn btn-outline-danger px-4 py-2">خرید</button></div>
+                </div>
+                <div class="card mt-4">
+                    <img class="card-img-top" src="midimg.png" alt="">
+                    <div class="card-header">شمال</div>
+                    <div class="card-body">شمال به چالوس</div>
+                    <div class="card-footer"><button class="btn btn-outline-danger px-4 py-2">خرید</button></div>
+                </div>
+            </div>
+            <!-- Nav Pills Tabs -->
+            <!-- Nav Pills Tabs -->
+            <div id="tabpane" class="mt-5 w-50 font-weight-bold">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#T1">تارنمای اصلی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#T2">تارنمای فرعی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#T3">تارنمای شخصی</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="T1">ماهی نام دسته‌ای از جانداران خون‌سرد آبزی است. آنها به کمک باله
+                        در آب حرکت می‌کنند، هنگام دور زدن از باله‌های سینه‌ای و
+                        هنگام حرکت سریع از بالهٔ دُمی استفاده می‌کنند. پوست بدن ماهی‌ها از پولک پوشیده شده و لغزنده است.
+                        ماهی‌ها با آب‌شش‌های دو
+                        طرف سر خود تنفس می‌کنند. ادامهٔ نسل ماهی‌ها با تخم ریزی در آب صورت می‌گیرد که از هر تخم یک ماهی
+                        متولد می‌شود. به‌طور کلی
+                        می‌توان گفت ماهی‌ها در دستهٔ آبزیان جای دارند و تخم گذارند.</div>
+                    <div class="tab-pane fade" id="T2">ماهی‌ها اعضای گروه نافراگیری از موجودات زنده‌اند که همهٔ آبزیان
+                        آبششدار جمجمه‌دار که دست و پای آن‌ها انگشت ندارد در این
+                        دسته جای می‌گیرد. دسته‌هایی مانند مخاطی‌واران، مکنده‌ماهی‌ها، غضروف‌ماهیان و ماهیان استخوانی
+                        همگی از این جمله‌اند. بیشتر
+                        ماهی‌ها خونسردند به عبارت دیگر اجازه می‌دهند تا دمای بدنشان با دمای فضای پیرامون تغییر کند اما
+                        برخی شناگران چابک و بزرگ
+                        مانند کوسه بزرگ سفید و ماهی تن دمای درونی بدنشان را کمی بالاتر نگه می‌دارند.[۱][۲] ماهی‌ها در
+                        آب‌های جهان رها شده‌اند
+                        تقریباً در هر محیط آبی می‌توان ماهی پیدا کرد از جریان‌های تند آب که از بالای کوه‌ها سرچشمه
+                        می‌گیرد (مانند ماهی تندابه)
+                        تا منطقهٔ مغاکی و حتی ناحیهٔ هدل در عمیق‌ترین نقاط اقیانوس ماهی زندگی می‌کند (مانند
+                        مارماهی‌سانان پلیکانی و
+                        قلابچه‌ماهی). ماهی‌ها ۳۳٬۱۰۰ گونهٔ توصیف شده دارند که در میان مهره‌داران گسترده‌ترین گونهٔ
+                        جانوری است.[۳] محل زندگی ماهی
+                        آب یا به‌طور دقیق‌تر و علمی‌تر آب طبیعی است. هر جایی که آب طبیعی مثل برکه و رودخانه وجود داشته
+                        باشد ماهی می‌تواند در
+                        آنجا زندگی کند به عبارت دیگر به عنوان یک اصل علمی می‌توان گفت که هر جا آب طبیعی وجود داشته باشد
+                        ماهی هم در آنجا وجود
+                        دارد.</div>
+                    <div class="tab-pane fade" id="T3">اهی یکی از منابع با اهمیت برای انسان‌ها است به ویژه منبع خوراکی.
+                        ماهیگیران عمده یا افرادی که تنها برای گذران زندگی ماهی
+                        می‌گیرند این جانور را از فضای وحش صید می‌کنند (نگاه کنید به ماهی‌گیری یا پرورش ماهی) یا از
+                        استخرها یا قفس‌هایی که در
+                        اقیانوس کار گذاشته‌اند (نگاه کنید به آبزی‌پروری) ماهی بدست می‌آورند. همچنین برخی ماهی را برای
+                        فروش به عنوان حیوان خانگی
+                        صید می‌کنند و در آکواریوم‌ها به نمایش می‌گذارند. در گذشته در میان برخی فرهنگ‌ها، ماهی نقش ایزدی
+                        داشت از این رو به عنوان
+                        نماد مذهبی یا هنری در برخی کتاب‌ها و فیلم‌ها نماد ماهی دیده می‌شود.</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Tozihate Ersal -->
+        <!-- Tozihate Ersal -->
+        <div id="fare" class="navbar navbar-expand m-5">
+            <div>
+                <h3>ارسال</h3>
+                <hr>
+                <p>سریع ترین ارسال</p>
+            </div>
+            <div>
+                <h3>ارسال</h3>
+                <hr>
+                <p>سریع ترین ارسال</p>
+            </div>
+            <div>
+                <h3>ارسال</h3>
+                <hr>
+                <p>سریع ترین ارسال</p>
+            </div>
+        </div>
+        <hr>
+        <div id="products">
+            <br><br><br>
+            <kbd><strong>محصولات</strong></kbd>
+            <div class="row w-100 mr-0">
+                <img src="fernando-puente-eu2EP0CGWz4-unsplash.jpg" alt="">
+                <img src="tim-oun-9vEd-okmjfI-unsplash.jpg" alt="">
+                <img src="fish1.jpg" alt="">
+                <img src="sandro-katalina-sRaRlaFQolw-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <div id="usinfo" class="bg-dark">
+            <div class="float-right p-5">
+                <h3>درباره ما</h3>
+                <br>
+                <p>شرکت متخصصان پس فردا</p>
+            </div>
+            <img class="pt-4 rounded-circle" src="favico.jpg" alt="logo">
+            <div class="float-left p-5">
+                <h3>آدرس</h3>
+                <br>
+                <p>بلوار شرقی- به سمت غرب</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
